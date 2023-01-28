@@ -4,6 +4,6 @@
 <h3>Use '/compose' in URL to add daily blog's.</h3>
 <% posts.forEach(function(post){ %>
 <h1><%=post.title%></h2>
-<p><%=post.content.substring(0,100) + " ..."%><a href="/posts/<%=post.title %>"> Read More</a></p>
+<p><%=post.content.substring(0,100) + " ..."%><a href="/posts/<%=post._id %>"> Read More</a></p>
 <% }); %> 
 <%-include("partials/footer");-%>
